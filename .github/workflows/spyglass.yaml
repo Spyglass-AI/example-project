@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update Spyglass Deployments
-        uses: spyglass-ai/spyglass-deployments-action@v1.1
+        uses: spyglass-ai/spyglass-deployments-action@v1.2
         env:
           # Make sure to set this in your repo secrets
           SPYGLASS_API_KEY: ${{ secrets.SPYGLASS_API_KEY }}
