@@ -3,10 +3,12 @@ import time
 import yaml
 import openai
 from dotenv import load_dotenv
-from spyglass_ai import spyglass_openai, spyglass_trace
 
 # Load environment variables from .env file
 load_dotenv()
+
+# Import after loading environment variables to allow for automatic configuration
+from spyglass_ai import spyglass_openai, spyglass_trace
 
 def load_model_config():
     """Load model configuration from model.yaml file."""
